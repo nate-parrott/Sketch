@@ -45,6 +45,7 @@
             overlapping = YES;
         }
     }
+    CGContextRelease(ctx);
     free(data);
     return overlapping;
 }
