@@ -1,0 +1,20 @@
+[
+    "Text",
+    {"class": "SKTextCell", "property": "text", "height": 100},
+    {"class": "SKFontPreviewCell", "property": "fontName", "placeholder": "Font..."},
+    "",
+    {"class": "SKSegmentedCell", "property": "textAlignment", "options": [{"value": "left", "text": "Left"}, {"value": "center", "text": "Center"}, {"value": "right", "text": "Right"}]},
+ 
+     "Fill",
+    {"class": "SKBoolCell", "property": "fillShape", "title": "Fill shape"},
+    {"class": "SKColorPreviewCell", "property": "fillColor", "title": "Fill...", "dependsOn": "fillShape"},
+    
+     "Outline",
+    {"class": "SKBoolCell", "property": "strokeShape", "title": "Stroke shape"},
+    {"class": "SKSliderCell", "property": "strokeWidth", "min": 0, "max": 20, "dependsOn": "strokeShape"},
+    {"class": "SKColorPreviewCell", "property": "strokeColor", "title": "Outline color...", "dependsOn": "strokeShape"},
+    
+     "Shadow",
+     {"class": "SKBoolCell", "property": "showShadow", "title": "Shadow"},
+     {"class": "SKSliderCell", "property": "shadowRadius", "min": 1, "max": 20, "dependsOn": "showShadow"}
+]

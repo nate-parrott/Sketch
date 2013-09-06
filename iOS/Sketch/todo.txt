@@ -1,0 +1,2 @@
+-add fly-out element picker for selecting one of multiple overlapping elements
+-allow picking between snapping to other objects, snapping to grid, or no snapping

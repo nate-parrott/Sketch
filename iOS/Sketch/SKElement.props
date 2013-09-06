@@ -1,0 +1,9 @@
+[
+    "Rotation",
+    {"class": "SKSliderCell", "property": "rotation", "min": -4.712389, "max": 4.712389, "snapRadius": 6},
+    "Skew",
+    {"class": "SKSliderCell", "property": "skewX", "min": -0.999, "max": 0.999, "snapRadius": 6},
+    "Mask",
+    {"class": "SKBoolCell", "property": "mask", "title": "Mask"},
+    {"class": "SKActionCell", "title": "Edit mask...", "selector": "editMask", "dependsOn": "mask"}
+]

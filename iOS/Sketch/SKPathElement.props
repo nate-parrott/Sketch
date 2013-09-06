@@ -1,0 +1,11 @@
+[
+    "Path",
+    {"class": "SKActionCell", "title": "Edit shape...", "selector": "editSelectedElementPath"},
+    "Fill",
+    {"class": "SKBoolCell", "property": "fillShape", "title": "Fill"},
+    {"class": "SKFillPreviewCell", "property": "fill", "title": "Color...", "dependsOn": "fillShape"},
+    "Outline",
+    {"class": "SKBoolCell", "property": "strokeShape", "title": "Outline"},
+    {"class": "SKColorPreviewCell", "property": "strokeColor", "title": "Outline color...", "dependsOn": "strokeShape"},
+    {"class": "SKSliderCell", "property": "strokeWidth", "min": 0, "max": 20, "dependsOn": "strokeShape"}
+]

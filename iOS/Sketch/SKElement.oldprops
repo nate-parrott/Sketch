@@ -1,0 +1,10 @@
+[
+    /*"Shadow",
+    {"class": "SKBoolCell", "property": "showShadow", "title": "Shadow"},
+    {"class": "SKSizeCell", "property": "shadowOffset", "title": "Offset"},
+    {"class": "SKSliderCell", "property": "shadowRadius", "title": "Size", "min": 1, "max": 20},
+    {"class": "SKColorPreviewCell", "property": "shadowColor", "title": "Color"},*/
+    "Mask",
+     {"class": "SKBoolCell", "property": "mask", "title": "Mask"},
+     {"class": "SKActionCell", "title": "Edit mask...", "selector": "editMask"}
+]

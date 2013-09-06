@@ -1,0 +1,5 @@
+[
+    "Image",
+    {"class": "SKActionCell", "selector": "editSubImage", "title": "Edit..."},
+    {"class": "SKBoolCell", "property": "tileSubImage", "title": "Tile"}
+]
