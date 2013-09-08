@@ -35,21 +35,19 @@
     
     CGContextConcatCTM(ctx, CGAffineTransformMakeTranslation(-origin.x, -origin.y));
     [self strokeWithBlendMode:kCGBlendModeNormal alpha:0.5];
-    [otherPath strokeWithBlendMode:kCGBlendModeNormal alpha:0.5]; 
-    
-    /*CGImageRef image = CGBitmapContextCreateImage(ctx);
-    [UIImagePNGRepresentation([UIImage imageWithCGImage:image]) writeToFile:[NSString stringWithFormat:@"/Users/nateparrott/Desktop/overlap%i.png", _overlapNum] atomically:YES];
-    _overlapNum++;*/
-    
+    [otherPath strokeWithBlendMode:kCGBlendModeNormal alpha:0.5];
     UIGraphicsPopContext();
     
+    BOOL overlapping = NO;
     unsigned char minimumValue = 120; // a little less than 128
-    for (int i=0; i<canvasSize.width*canvasSize.height; i++) {
+    for (int i=0; i<canvasSize.width*canvasSize.height && !overlapping; i++) {
         if (data[i] < minimumValue) {
-            return YES;
+            overlapping = YES;
         }
     }
-    return NO;
+    CGContextRelease(ctx);
+    free(data);
+    return overlapping;
 }
 
 @end
